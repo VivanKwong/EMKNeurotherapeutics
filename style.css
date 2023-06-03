@@ -1,43 +1,82 @@
-ul {
-    margin: 5px;
-    padding: 5px;
-    list-style-type: none;
-    padding: 5px;
+header {
     display: flex;
-    flex-direction: row;
-    text-align: center;
-    justify-content: space-around;
-    background-color:#FFCDB2;
-    color: #6D6875;
+    align-items: center; /* Align items vertically in the center */
+    justify-content: space-between; /* Distribute space between header and nav */
+    padding: 50px;
   }
   
-  .navText {
-    margin: 10px;
-    padding: 10px;
-    display: block;
-    width: 100%;
-    text-decoration: none;
-    font-family: 'verdana';
-    color: #6D6875;
-    font-size: 15px;
-    text-align: center;
-    background-color: #FFCDB2;
-    transition-duration: 0.3s;
-  }
-  
-  .navText:hover {
-    color:#FFCDB2;
-    background-color: #FFB4A2;
-    text-decoration: none;
-    cursor:pointer;
-    padding: 5px;
-    font-size: 20px;
+  body {
+    background-color:#c3edb5;
   }
   
   .nav-bar {
-    background-color: #FFCDB2;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    background-color:#c3edb5;
+  }
+  
+  .nav-bar li {
+    display: inline-block;
+  }
+  
+  .nav-bar li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    font-family: serif;
+  }
+  
+  .nav-bar li a:hover {
+    color: white;
+    transition-duration: 0.3s;
+  }
+  
+  .navText {
+    color: darkslategrey;
+  }
+  
+  .home {
+    list-style: none;
+    text-align: left;
+  }
+  
+  .ying {
+    font-size: 40;
+    color: darkslategrey;
+    font-weight: lighter;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    font-family: 'forum', serif;
+  }
+  
+  .nav-bar .active {
+    color: white;
   }
 
-  .ying {
-    font-size: 30;
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .parallax-item {
+    display: flex;
+    align-items: last baseline;
+    justify-content: left;
+    font-weight: bold;
+    font-family: Montserrat, sans-serif;
+    width: 85%;
+    background: url("homePic.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Parallax Effect for DIV 3 */
+    min-height: 550px;
+    float: left;
+    margin: 0;
+    padding: 0;
+  }
+
+  p {
+    display: inline-table;
+    white-space: pre-wrap;
   }
