@@ -107,3 +107,54 @@ p {
   padding: 70px; /* Add padding for spacing */
   color: darkslategrey; /* Text color */
 }
+
+h2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center; /* Align items vertically in the center */
+  padding-left: 25px;
+  padding-right: 50px;
+  font-size: 40px;
+  color: darkslategrey;
+  font-weight: lighter;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  font-family: 'forum', serif;
+}
+
+#tms-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; /* Horizontal layout */
+  text-align: center; /* Center-align text within the p elements */
+}
+
+#tms-home p {
+  max-width: 20%; /* Adjust as needed to control the width of each paragraph */
+  padding-left: 30px; /* Add padding for spacing */
+  padding-right: 30px;
+  font-size: 20px; /* Adjust font size as needed */
+  line-height: 1.5; /* Adjust line height for readability */
+}
+
+#button-container {
+  text-align: center;
+}
+
+button {
+  font-family: 'Cabin';
+  border: none;
+  padding: 1%;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-right: 6%;
+  margin-left: 6%;
+  background-color: rgb(201, 201, 247);
+}
+
+#button-container button:hover {
+  cursor: pointer;
+  background-color: rgb(226, 226, 249);
+}
