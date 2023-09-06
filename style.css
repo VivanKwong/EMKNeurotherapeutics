@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+  }
+
 header {
     display: flex;
     align-items: center; /* Align items vertically in the center */
@@ -9,6 +13,7 @@ header {
     background-color:#c3edb5;
   }
   
+/* styling for the navigation bar */
   .nav-bar {
     list-style: none;
     margin: 0;
@@ -36,7 +41,12 @@ header {
   .navText {
     color: darkslategrey;
   }
-  
+
+  .nav-bar .active {
+    color: white;
+  }
+
+/* styling for title of site: Dr. Ying A. Cao */
   .home {
     list-style: none;
     text-align: left;
@@ -51,14 +61,7 @@ header {
     font-family: 'forum', serif;
   }
   
-  .nav-bar .active {
-    color: white;
-  }
-
-  html {
-    scroll-behavior: smooth;
-  }
-
+/* styling for the paralllax image on home page */
   .parallax-item {
     display: flex;
     align-items: last baseline;
