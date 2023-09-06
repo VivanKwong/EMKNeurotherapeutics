@@ -2,11 +2,24 @@ html {
     scroll-behavior: smooth;
   }
 
+  .banner {
+    background-color: rgb(201, 201, 247); /* Background color of the banner */
+    color: #fff; /* Text color */
+    text-align: center; /* Center-align the text */
+    padding: 15px; /* Add some padding for spacing */
+    font-size: 18px; /* Adjust font size as needed */
+    font-family: serif;
+    margin: 0;
+}
+
 header {
     display: flex;
     align-items: center; /* Align items vertically in the center */
     justify-content: space-between; /* Distribute space between header and nav */
-    padding: 50px;
+    padding-top: 30px;
+    padding-left: 25px;
+    padding-right: 50px;
+    padding-bottom: 100px;
   }
   
   body {
@@ -62,24 +75,35 @@ header {
   }
   
 /* styling for the paralllax image on home page */
-  .parallax-item {
-    display: flex;
-    align-items: last baseline;
-    justify-content: left;
-    font-weight: bold;
-    font-family: Montserrat, sans-serif;
-    width: 85%;
-    background: url("homePic.jpeg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; /* Parallax Effect for DIV 3 */
-    min-height: 550px;
-    float: left;
-    margin: 0;
-    padding: 0;
-  }
+.parallax-item {
+  display: flex;
+  align-items: last baseline;
+  justify-content: left;
+  font-weight: bold;
+  font-family: Montserrat, sans-serif;
+  width: 85%; /* Adjusted width to leave space on the right side */
+  background: url("homePic.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Parallax Effect for DIV 3 */
+  min-height: 550px;
+  float: left;
+  margin-right: auto; /* Pushes the element to the left */
+  padding: 0;
+}
 
-  p {
-    display: inline-table;
-    white-space: pre-wrap;
-  }
+p {
+  display: inline-table;
+  white-space: pre-wrap;
+}
+
+.vertical-text {
+  flex: 1; /* Allow the text to take up 1/2 of the container */
+  writing-mode: vertical-rl; /* Rotate text from bottom to top */
+  text-orientation: mixed; /* Ensure compatibility with different browsers */
+  text-align: center; /* Center-align the vertical text */
+  font-size: 18px; /* Adjust font size as needed */
+  font-family: serif; /* Make the text bold */
+  padding: 70px; /* Add padding for spacing */
+  color: darkslategrey; /* Text color */
+}
